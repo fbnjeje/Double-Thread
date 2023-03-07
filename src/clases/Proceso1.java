@@ -3,7 +3,6 @@ package clases;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.sound.sampled.AudioInputStream;
@@ -35,7 +34,7 @@ public class Proceso1  extends Thread{
     }
 
     static void song() throws  UnsupportedAudioFileException, IOException, LineUnavailableException{
-        Scanner in = new Scanner(System.in);
+        
         
         File file = new File("clases/Oliver.wav");
         AudioInputStream audioStream = AudioSystem.getAudioInputStream(file);

@@ -1,6 +1,6 @@
 package clases;
 
-import java.applet.AudioClip;
+
 
 public class Audio extends javax.swing.JFrame implements Runnable {
 
@@ -8,7 +8,7 @@ public class Audio extends javax.swing.JFrame implements Runnable {
     public void run(){
     }
     
-        AudioClip Sound;
+        
     
     
     
@@ -70,9 +70,6 @@ public class Audio extends javax.swing.JFrame implements Runnable {
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         
-        Sound = java.applet.Applet.newAudioClip(getClass().getResource("/clases/Oliver.wav"));
-        
-        Sound.play();
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
