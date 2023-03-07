@@ -35,11 +35,13 @@ public class Proceso1  extends Thread{
 
     static void song() throws  UnsupportedAudioFileException, IOException, LineUnavailableException{
         
-        String fileName = "C:/Users/Neonx/Desktop/hilos/src/clases/Oliver.wav";
+        String fileName = "C:/Users/salas/Downloads/Double-Thread-master/Double-Thread-master/src/clases/Oliver.wav";
         File file = new File(fileName);
         AudioInputStream audioStream = AudioSystem.getAudioInputStream(file);
         Clip clip = AudioSystem.getClip();
         clip.open(audioStream);
+
+	clip.start();
 
     }
 }
